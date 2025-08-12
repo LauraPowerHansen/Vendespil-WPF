@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vendespil_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Vendespil" Height="450" Width="800">
+
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="0" Grid.Row="0"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="0" Grid.Row="1"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="0" Grid.Row="2"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="0" Grid.Row="3"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="1" Grid.Row="0"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="1" Grid.Row="1"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="1" Grid.Row="2"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="1" Grid.Row="3"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="2" Grid.Row="0"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="2" Grid.Row="1"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="2" Grid.Row="2"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="2" Grid.Row="3"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="3" Grid.Row="0"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="3" Grid.Row="1"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="3" Grid.Row="2"/>
+        <Button Content="{Binding Counter}" Command = "{Binding AddPointCommand}" Grid.Column="3" Grid.Row="3"/>
+        
 
     </Grid>
 </Window>
